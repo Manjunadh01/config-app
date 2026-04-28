@@ -55,7 +55,7 @@ app.get("/export-project", authMiddleware, async (req, res) => {
 
     const archive = archiver("zip", { zlib: { level: 9 } });
 
-    archive.on("error", (err) => {
+    archive.on("error", (err: any) => {
       throw err;
     });
 
