@@ -5,7 +5,10 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
+
     "moduleResolution": "node16",
+    "ignoreDeprecations": "6.0",
+
     "strict": true,
     "skipLibCheck": true,
     "verbatimModuleSyntax": false
