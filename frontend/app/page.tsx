@@ -8,7 +8,7 @@ export default function Home() {
   const [config, setConfig] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/config")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/config`)
       .then(res => res.json())
       .then(data => setConfig(data))
       .catch(err => console.error("Error:", err));
